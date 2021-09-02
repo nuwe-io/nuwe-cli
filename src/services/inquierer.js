@@ -12,7 +12,7 @@ const inquire = async (question) => inquirer.prompt(question)
  * Triggers inquirer when yes/no  needs to be answered
  * @returns {Object}
  */
-async function inquireRepositoryData() {
+async function inquireRepositoryData(category) {
   const toQuestion = [questions.url, questions.changeName]
 
   const { url, changeName } = inquire(toQuestion)
